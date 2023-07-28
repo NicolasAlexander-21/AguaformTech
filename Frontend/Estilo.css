@@ -1,0 +1,120 @@
+/* Estilos CSS para la página */
+body {
+  background-color: #f3f3f3;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  color: #333;
+  font-family: "Pacifico", cursive;
+}
+h2 {
+  color: #555;
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+p {
+  color: #555;
+  text-align: left;
+  font-family: "Lobster", cursive;
+}
+#estadisticas,
+#datos-capturados {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#activarAireador,
+#activarAlimentador {
+  border-radius: 15px;
+}
+
+/*Diseño de la tabla de sensores en tiempo real*/
+#tabla-container,
+#diagrama-tiempo-real {
+  width: 50%;
+  border-collapse: collapse;
+}
+#tablaSensores {
+  width: 100%;
+}
+#tablaSensores th,
+#tablaSensores td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+#tablaSensores th {
+  background-color: #82b5ec; /* Color de fondo del encabezado */
+  color: #ffffff; /* Color del texto del encabezado */
+  padding: 8px; /* Espaciado interno del encabezado */
+}
+#tablaSensores td {
+  background-color: #f8f9fa; /* Color de fondo de las celdas */
+  color: #000000; /* Color del texto de las celdas */
+  padding: 8px; /* Espaciado interno de las celdas */
+}
+#tablaSensores tr:nth-child(even) {
+  background-color: #e9ecef; /* Color de fondo de las filas pares */
+}
+#diagrama-container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px; /* Ajusta la altura según tus necesidades */
+  width: 70%;
+}
+#estadisticas {
+  justify-content: center;
+}
+
+.search-form {
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: left;
+  justify-content: left;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  margin: 0 auto;
+}
+.search-form select[type="text"],
+.search-form input[type="date"],
+.search-form input[type="time"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.agromatica-card {
+  background-image: url("https://www.shutterstock.com/image-vector/cute-shrimp-cartoon-animal-character-260nw-1382033456.jpg");
+  background-size: cover;
+  color: #6e4a4a; /* Cambia el color de texto según tus preferencias */
+  padding: 10px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* Estilos para el botón cuando está encendido */
+.encendido {
+  background-color: green;
+  color: white;
+}
+
+/* Estilos para el botón cuando está apagado */
+.apagado {
+  background-color: red;
+}
+
+/* Estilos generales para todos los botones */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}

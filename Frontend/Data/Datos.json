@@ -1,0 +1,29 @@
+{
+  "sensores": [
+    {
+      "nombre": "Sensor de pH",
+      "valor": 7.2,
+      "unidad": "pH"
+    },
+    {
+      "nombre": "Sensor de Humedad",
+      "valor": 65,
+      "unidad": "%"
+    },
+    {
+      "nombre": "Sensor de Calidad de Aire",
+      "valor": 120,
+      "unidad": "ppm"
+    },
+    {
+      "nombre": "Sensor de Temperatura",
+      "valor": 25,
+      "unidad": "°C"
+    },
+    {
+      "nombre": "Sensor de Presión",
+      "valor": 1013,
+      "unidad": "hPa"
+    }
+  ]
+}

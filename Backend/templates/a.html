@@ -1,0 +1,61 @@
+<div class="bar-chart">
+  <div class="axis-x">
+    {% for registro in senHumedadAire %}
+      
+    <span>
+      <p>
+        {{registro}}
+      </p>
+     
+    </span>
+    
+    {% endfor %}
+    <!-- Añade más valores en el eje X según necesites -->
+  </div>
+  <div class="axis-y">
+    <span>0</span>
+    <span>20</span>
+    <span>40</span>
+    <span>60</span>
+    <span>80</span>
+    <span>100</span>
+  </div>
+
+  {% for registro in senHumedadAire %}
+  <div class="bar" style="height: {{senHumedadAire[registro]}}%;  left: 3%;"></div> <!-- Barra 1 -->
+  <!-- <div class="bar" style="height: 60%;  left: 7%;"></div> 
+  <div class="bar" style="height: 90%;  left: 11%;"></div>
+  <div class="bar" style="height: 90%;  left: 15%;"></div>
+  <div class="bar" style="height: 80%;  left: 19%;"></div>
+  <div class="bar" style="height: 60%;  left: 23%;"></div>
+  <div class="bar" style="height: 90%;  left: 27%;"></div>
+  <div class="bar" style="height: 90%;  left: 31%;"></div>
+  <div class="bar" style="height: 80%;  left: 35%;"></div>
+  <div class="bar" style="height: 60%;  left: 39%;"></div>
+  <div class="bar" style="height: 90%;  left: 43%;"></div>
+  <div class="bar" style="height: 90%;  left: 47%;"></div>
+  <div class="bar" style="height: 80%;  left: 51%;"></div>
+  <div class="bar" style="height: 60%;  left: 55%;"></div>
+  <div class="bar" style="height: 90%;  left: 59%;"></div>
+  <div class="bar" style="height: 90%;  left: 63%;"></div>
+  <div class="bar" style="height: 80%;  left: 67%;"></div>
+  <div class="bar" style="height: 60%;  left: 71%;"></div>
+  <div class="bar" style="height: 90%;  left: 75%;"></div>
+  <div class="bar" style="height: 90%;  left: 79%;"></div>
+  <div class="bar" style="height: 80%;  left: 83%;"></div>
+  <div class="bar" style="height: 60%;  left: 87%;"></div>
+  <div class="bar" style="height: 90%;  left: 91%;"></div>
+  <div class="bar" style="height: 90%;  left: 95%;"></div>  -->
+  {% endfor %}
+  <!-- Añade más barras y sus posiciones según necesites -->
+</div>
+
+{% for i in distancia %}
+  <div>{{i}}</div>
+{% endfor %}
+
+
+
+
+
+<!-- <a href="http://127.0.0.1:8000/consultas/2023-10-10">Hola</a> -->
